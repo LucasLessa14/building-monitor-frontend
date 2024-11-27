@@ -1,0 +1,41 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  background-color: #f8f8f8;
+  color: #444;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+
+  width: calc(100% - 32px);
+  max-width: 480px;
+  background-color: #fff;
+  padding: 1rem;
+  border: #E3E3E3 1px solid;
+}
+
+form > * {
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.form-group > * {
+  width: 100%;
+}

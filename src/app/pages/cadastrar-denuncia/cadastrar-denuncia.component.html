@@ -1,0 +1,47 @@
+<div class="container">
+  <h2>Cadastrar denúncia</h2>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="localizacao">Localização</label>
+      <input
+        nz-input
+        id="localizacao"
+        placeholder="Exemplo: R. Gonçalves Lêdo, 777"
+        formControlName="localizacao"
+        type="text"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="tipo">Tipo</label>
+      <nz-select
+        id="tipo"
+        formControlName="tipo"
+        nzShowSearch
+        nzAllowClear
+        nzPlaceHolder="Selecione o tipo de edificacao"
+      >
+        <nz-option nzValue="Edificação" nzLabel="Edificação"></nz-option>
+        <nz-option nzValue="Terreno" nzLabel="Terreno"></nz-option>
+        <nz-option nzValue="Ponte" nzLabel="Ponte"></nz-option>
+        <nz-option nzValue="Outro" nzLabel="Outro"></nz-option>
+      </nz-select>
+    </div>
+
+    <div class="form-group">
+      <label for="descricao">Descrição</label>
+      <textarea
+        nz-input
+        id="descricao"
+        placeholder="Digite a descrição"
+        formControlName="descricao"
+        [nzAutosize]="{ minRows: 3, maxRows: 5 }"
+      ></textarea>
+    </div>
+
+    <button nz-button type="submit" nzType="primary">
+      Cadastrar Edificação
+    </button>
+  </form>
+</div>

@@ -1,0 +1,15 @@
+<h4>Edificações monitorados</h4>
+
+<button nz-button nzType="primary">Cadastrar Edificação</button>
+
+<div class="edificacoes">
+  <div
+    class="edificacao"
+    *ngFor="let edificacao of edificacoes"
+    [class.ativa]="edificacao.id === edificacaoAtual?.id"
+    (click)="selecionarEdificacao(edificacao)"
+  >
+    <h5>{{ edificacao.nome }}</h5>
+    <p>{{ edificacao.endereco }}</p>
+  </div>
+</div>

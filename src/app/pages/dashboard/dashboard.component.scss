@@ -1,0 +1,8 @@
+.container {
+  display: grid;
+  grid-template-columns: minmax(240px, 15%) 1fr minmax(240px, 15%);
+  gap: 24px; /* Espaçamento opcional entre os elementos */
+  width: 100vw;
+  height: 100vh;
+  padding: 24px; /* Espaçamento opcional */
+}

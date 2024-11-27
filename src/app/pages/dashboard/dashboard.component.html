@@ -1,0 +1,15 @@
+<div class="container">
+  <app-edificacoes-monitoradas
+    class="sidebar"
+    (edificacao)="onEdificacaoSelecionada($event)"
+  ></app-edificacoes-monitoradas>
+
+  <app-relatorio
+    class="main"
+    [edificacao]="edificacaoSelecionada"
+  ></app-relatorio>
+
+  <app-denuncias-pendentes
+    class="sidebar"
+  ></app-denuncias-pendentes>
+</div>

@@ -1,0 +1,15 @@
+<div class="imagem">
+</div>
+<img [src]="imagem" [alt]="edificacao?.nome">
+
+<div class="sensores">
+  <div class="sensor" *ngFor="let sensor of sensores">
+    <div class="nome">
+      <h2>{{ sensor.nome }}</h2>
+      <p>Sensor de {{ sensor.tipoSensor }}</p>
+    </div>
+    <div class="valor">
+      <p>{{ sensor.valorAtual + " " + sensor.unidade }}</p>
+    </div>
+  </div>
+</div>

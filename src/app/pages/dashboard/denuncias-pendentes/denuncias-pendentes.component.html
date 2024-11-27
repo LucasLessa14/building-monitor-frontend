@@ -1,0 +1,9 @@
+<h4>Denuncias pendentes</h4>
+
+<div class="denuncias">
+  <div class="denuncia" *ngFor="let denuncia of denuncias">
+    <nz-card [nzTitle]="denuncia.localizacao">
+      <p>{{ denuncia.descricao }}</p>
+    </nz-card>
+  </div>
+</div>
